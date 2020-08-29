@@ -1,2 +1,9 @@
-<h1>Flats#show</h1>
-<p>Find me in app/views/flats/show.html.erb</p>
+<h1>Flat show</h1>
+<%= link_to "index", flats_path %>
+<ul>
+  <li><%= @flat.name %> </li>
+  <li><%= @flat.address %> </li>
+  <li><%= @flat.description %> </li>
+  <li><%= @flat.price_per_night %> </li>
+  <li><%= @flat.number_of_guests %> </li>
+</ul>
